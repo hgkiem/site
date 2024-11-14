@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section with Gradient Background */
+.hero {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa, #9c27b0, #ba68c8);
+    color: #ffffff;
+    padding: 80px 0;
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #e1bee7;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Fixed Navigation Bar with Blurry, Semi-Transparent Background */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link {
+    color: #e1bee7 !important;
+}
+
+.navbar .navbar-brand {
+    color: #ffffff !important;
+}
+
+
+/* Service Cards with Gradient Background and Hover Effect */
+.service-card {
+    background: linear-gradient(135deg, #8e24aa, #ba68c8);
+    color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .card-body {
+    padding: 25px;
+}
+
+.service-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.service-card .card-text {
+    font-size: 1rem;
+    color: #f3e5f5;
+    margin-top: 10px;
+}
+
+
+/* Testimonials */
+blockquote {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 40px;
+}
+
+/* Contact Form Styling */
+.contact-form .form-control {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #6a1b9a;
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.3);
+}
+
+.contact-form .btn-primary {
+    background-color: #6a1b9a;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #8e24aa;
+}
+
+/* Google Map Styling */
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
